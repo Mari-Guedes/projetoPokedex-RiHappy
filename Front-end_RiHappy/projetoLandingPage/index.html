@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .banner {
+            background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('Img/banner.png');
+            padding: 20px;
+            text-align: center;
+        }
+        .conteúdo-banner {
+            width:600px;
+            text-align: center;
+            color: white;
+            margin: auto;
+        }
+        .logo img {
+            background-color: rgba(0, 0, 0, .2);
+            height: 260px;
+            width: 260px;
+            margin: auto;
+            border-radius: 50%;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .texto-banner h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: transparent;
+            background: -webkit-linear-gradient(#33A8DB, #1472B7);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        .texto-banner p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .texto-banner button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .conteúdo-principal {
+            padding: 20px;
+            text-align: center;
+            width: 800px;
+            margin: 100px auto;
+            padding: auto;
+        }
+        .texto-conteúdo-principal h2 {
+            font-size: 2rem;
+            color: #33A8DB;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .texto-conteúdo-principal p {
+            font-size: 1.2em;
+            color: white;
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+        }
+        .modulo {
+            color: white;
+            width: 530px;
+            margin: 0 auto 24px;
+            border: 1px solid #33A8DB;
+            background-color: #252525;
+            padding: 16px;
+            border-radius: 100px;
+            box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+            text-align: center;
+        }
+        .modulo span {
+            font-weight: bold;
+            color: #33A8DB;
+            text-transform: uppercase;
+        }
+        .transforme-seu-futuro-com-css {
+            background-color: #e9ecef;
+            padding: 20px;
+            text-align: center;
+        }
+        .texto-principal h2 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            text-transform: lowercase;
+            max-width: 250px;
+            text-shadow: 3px 2px #33A8DB;
+            color: white;
+            background-image: url('Img/woman-code.png');
+        }
+        .depoimentos {
+            padding: 20px;
+            text-align: center;
+        }
+        .depoimentos h3 {
+            font-size: 2rem;
+            color: #33A8DB;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        .depoimentos img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+
+        }
+        .depoimentos p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            unicode-bidi: isolate;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .footer {
+                padding: 60px 0;
+                text-align: center;
+                background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+                border-top: 1px solid #33A8DB80;
+        }
+        .dio-logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            font-size: 1em;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="banner">
+        <div class="conteúdo-banner">
+            <div class="logo">
+                <img src="Img/logo.png" alt="Logo da Empresa">
+            </div>
+            <div class="texto-banner">
+                <h1>TRILHA DE CSS DA DIO</h1>
+                <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais</p>
+                <button>QUERO ME INSCREVER</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="conteúdo-principal">
+            <div class="texto-conteúdo-principal">
+                <h2>O QUE VOU APRENDER?</h2>
+                <p>Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.</p>
+                    <div class="modulo">
+                        <span>Módulo 01:</span> estruturando páginas web com HTML5
+                    </div>
+                    <div class="modulo">
+                        <span>Módulo 02:</span> trabalhando com layouts no CSS
+                    </div>
+                    <div class="modulo">
+                        <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+                    </div>
+
+            </div>
+        </section>
+        <section id="transforme-seu-futuro-com-css">
+            <div class="texto-principal">
+                <h2>TRANSFORME O MUNDO COM A GENTE</h2>
+                <img src="Img/woman-code.png" title="Mulher programadora" alt="Mulher programadora">
+            </div>
+        </section>
+        <section id="depoimentos">
+            <div class="depoimentos">
+                <h3>Evolua e encare novos desafios profissionais</h3>
+                 <img src="Img/professional-challenges.png" title="Homem lendo depoimentos no tablet" alt="Homem lendo depoimentos no tablet">
+                    <p>
+                    Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+                    </p>
+            </div>
+        </section>
+     </main>
+        <footer>
+            <img class="dio-logo" src="Img/dio-logo.png" title="Logotipo DIO" alt="Logotipo DIO">
+                 <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+        </footer>
+</body>
+</html>
