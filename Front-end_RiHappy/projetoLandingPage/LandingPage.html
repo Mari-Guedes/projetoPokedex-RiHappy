@@ -17,9 +17,10 @@
             background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('Img/banner.png');
             padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #33A8DB80;
         }
-        .conteúdo-banner {
-            width:600px;
+        .conteudo-banner {
+            width: 600px;
             text-align: center;
             color: white;
             margin: auto;
@@ -28,10 +29,10 @@
             background-color: rgba(0, 0, 0, .2);
             height: 260px;
             width: 260px;
-            margin: auto;
             border-radius: 50%;
             padding: 16px;
-            margin-bottom: 16px;
+            margin: 0 auto 16px;
+            display: block;
         }
         .texto-banner h1 {
             font-size: 2.5rem;
@@ -47,35 +48,36 @@
             margin-bottom: 20px;
         }
         .texto-banner button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
+            color: #31A8DD;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            background-color: transparent;
+            border-image: linear-gradient(#3BA1CD, #1572B7);
+            border-image-slice: 10;
+            border-radius: 30px;
         }
-        .conteúdo-principal {
+        .conteudo-curso {
             padding: 20px;
             text-align: center;
             width: 800px;
-            margin: 100px auto;
-            padding: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
         }
-        .texto-conteúdo-principal h2 {
+        .texto-curso h2 {
             font-size: 2rem;
             color: #33A8DB;
             font-weight: bold;
             letter-spacing: 4px;
             text-transform: uppercase;
             margin-bottom: 24px;
-            text-align: center;
         }
-        .texto-conteúdo-principal p {
+        .texto-curso p {
             font-size: 1.2em;
             color: white;
-            box-sizing: border-box;
-            margin: 0;
-            text-align: center;
+            margin-bottom: 24px;
         }
         .modulo {
             color: white;
@@ -86,26 +88,33 @@
             padding: 16px;
             border-radius: 100px;
             box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
-            text-align: center;
         }
         .modulo span {
             font-weight: bold;
             color: #33A8DB;
             text-transform: uppercase;
         }
-        .transforme-seu-futuro-com-css {
-            background-color: #e9ecef;
-            padding: 20px;
-            text-align: center;
+        .transforme-o-mundo {
+           background: url('Img/woman-code.png') no-repeat center/cover;
+             background-attachment: fixed; /* efeito parallax */
+            border-top: 1px solid #33A8DB80;
+            border-bottom: 1px solid #33A8DB80;
+            height: 560px;
+            display: flex;
+
+            /* Controle de overflow */
+            overflow-x: hidden;  /* sem barra horizontal */
+            overflow-y: hidden;  /* sem barra vertical */ 
         }
-        .texto-principal h2 {
+        .texto-mundo h2 {
             font-weight: 900;
             font-size: 2.5rem;
-            text-transform: lowercase;
+            text-transform: lowercase; /* mantém em minúsculas */
             max-width: 250px;
             text-shadow: 3px 2px #33A8DB;
             color: white;
-            background-image: url('Img/woman-code.png');
+            margin: auto;
+            padding: 200px;
         }
         .depoimentos {
             padding: 20px;
@@ -123,45 +132,35 @@
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
-
         }
         .depoimentos p {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
             color: white;
             font-size: 1.2em;
-            text-align: center;
-            margin: 0 auto;
             max-width: 800px;
+            margin: 0 auto;
         }
-        .footer {
-                padding: 60px 0;
-                text-align: center;
-                background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
-                border-top: 1px solid #33A8DB80;
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+            border-top: 1px solid #33A8DB80;
         }
         .dio-logo {
             max-width: 150px;
-            height: auto;
-            margin-bottom: 10px;
+            margin: 0 auto 10px;
+            display: block;
         }
-        .footer p {
+        footer p {
             font-size: 1em;
             color: white;
-            margin: 0;
-            text-align: center;
         }
     </style>
 </head>
 <body>
     <header class="banner">
-        <div class="conteúdo-banner">
+        <div class="conteudo-banner">
             <div class="logo">
-                <img src="Img/logo.png" alt="Logo da Empresa">
+                <img src="Img/logo.png" alt="Logo do curso - DIO" title="Logo do curso - DIO">
             </div>
             <div class="texto-banner">
                 <h1>TRILHA DE CSS DA DIO</h1>
@@ -171,41 +170,35 @@
         </div>
     </header>
     <main>
-        <section id="conteúdo-principal">
-            <div class="texto-conteúdo-principal">
+        <section id="conteudo-curso" class="conteudo-curso">
+            <div class="texto-curso">
                 <h2>O QUE VOU APRENDER?</h2>
                 <p>Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.</p>
-                    <div class="modulo">
-                        <span>Módulo 01:</span> estruturando páginas web com HTML5
-                    </div>
-                    <div class="modulo">
-                        <span>Módulo 02:</span> trabalhando com layouts no CSS
-                    </div>
-                    <div class="modulo">
-                        <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
-                    </div>
-
+                <div class="lista-modulos">
+                    <div class="modulo"><span>Módulo 01:</span> primeiros passos com CSS</div>
+                    <div class="modulo"><span>Módulo 02:</span> trabalhando com layouts no CSS</div>
+                    <div class="modulo"><span>Módulo 03:</span> refinando os estilos CSS das nossas páginas</div>
+                </div>
             </div>
         </section>
-        <section id="transforme-seu-futuro-com-css">
-            <div class="texto-principal">
+        <section id="transforme-o-mundo" class="transforme-o-mundo">
+            <div class="texto-mundo">
                 <h2>TRANSFORME O MUNDO COM A GENTE</h2>
-                <img src="Img/woman-code.png" title="Mulher programadora" alt="Mulher programadora">
             </div>
         </section>
         <section id="depoimentos">
             <div class="depoimentos">
                 <h3>Evolua e encare novos desafios profissionais</h3>
-                 <img src="Img/professional-challenges.png" title="Homem lendo depoimentos no tablet" alt="Homem lendo depoimentos no tablet">
-                    <p>
+                <img src="Img/professional-challenges.png" title="Homem lendo depoimentos no tablet" alt="Homem lendo depoimentos no tablet">
+                <p>
                     Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
-                    </p>
+                </p>
             </div>
         </section>
-     </main>
-        <footer>
-            <img class="dio-logo" src="Img/dio-logo.png" title="Logotipo DIO" alt="Logotipo DIO">
-                 <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
-        </footer>
+    </main>
+    <footer>
+        <img class="dio-logo" src="Img/dio-logo.png" title="Logotipo DIO" alt="Logotipo DIO">
+        <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    </footer>
 </body>
 </html>
